@@ -1,0 +1,33 @@
+{
+  "name": "My Model",
+  "summary": "One line describing what this model forecasts.",
+  "forecastVariable": "price",
+  "timeHorizon": "day_ahead",
+  "runMode": "AUTOMATIC",
+  "public": false,
+  "inputs": [
+    {
+      "key": "history",
+      "file": "test_input/history.json",
+      "trigger": "USE_MOST_RECENT_FILE",
+      "uploadFileFormat": "json",
+      "targetFileFormat": "json"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "Series A",
+      "key": "series_a",
+      "type": "float",
+      "seriesKey": true,
+      "colour": "#87CEEB"
+    },
+    {
+      "name": "Series B",
+      "key": "series_b",
+      "type": "float",
+      "seriesKey": true,
+      "colour": "#98022C"
+    }
+  ]
+}
